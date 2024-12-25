@@ -14,7 +14,7 @@ import UpdateSeminarPage, {
 import Register from "./pages/Register";
 import UsersDashboard, {
   loader as usersDashboardLoader,
-} from "./components/usersDashboard";
+} from "./components/UsersDashboard";
 
 import BookedSeminars, {
   loader as bookedSeminarsLoader,
