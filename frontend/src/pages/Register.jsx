@@ -19,7 +19,7 @@ const Register = () => {
       console.log(email, password);
 
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://dict-project.onrender.com/api/auth/register",
         {
           firstName,
           lastName,

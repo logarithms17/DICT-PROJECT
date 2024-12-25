@@ -36,7 +36,9 @@ const Dashboard = () => {
 export default Dashboard;
 
 export const loader = async () => {
-  const response = await axios.get("http://localhost:5000/api/seminars");
+  const response = await axios.get(
+    "https://dict-project.onrender.com/api/seminars"
+  );
   console.log(response);
 
   if (response.status === 400) {

@@ -136,7 +136,7 @@ export const deleteSeminarAction = async (seminarId) => {
   console.log(seminarId);
 
   const response = await axios.delete(
-    `http://localhost:5000/api/seminars/${seminarId}`,
+    `https://dict-project.onrender.com/api/seminars/${seminarId}`,
     {
       headers: {
         Authorization: `Bearer ${token}`,

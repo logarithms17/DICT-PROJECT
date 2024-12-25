@@ -212,7 +212,7 @@ export default UpdateSeminarPage;
 export const loader = async ({ params }) => {
   console.log(params.id);
   const response = await axios.get(
-    `http://localhost:5000/api/seminars/${params.id}`
+    `https://dict-project.onrender.com/api/seminars/${params.id}`
   );
   console.log(response);
 
@@ -230,7 +230,7 @@ export const action = async ({ request, params }) => {
   const seminarId = params.id;
 
   const response = await axios.put(
-    `http://localhost:5000/api/seminars/${seminarId}`,
+    `https://dict-project.onrender.com/api/seminars/${seminarId}`,
     data,
     {
       headers: {

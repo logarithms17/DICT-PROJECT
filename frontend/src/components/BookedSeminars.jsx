@@ -79,11 +79,14 @@ export default BookedSeminars;
 export const loader = async () => {
   const token = localStorage.getItem("token");
 
-  const response = await axios.get("http://localhost:5000/api/bookings", {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  });
+  const response = await axios.get(
+    "https://dict-project.onrender.com/api/bookings",
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
 
   console.log(response);
 

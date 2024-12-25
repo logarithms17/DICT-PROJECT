@@ -165,7 +165,7 @@ export const action = async ({ request }) => {
   const token = localStorage.getItem("token");
 
   const response = await axios.post(
-    "http://localhost:5000/api/seminars",
+    "https://dict-project.onrender.com/api/seminars",
     data,
     {
       headers: {

@@ -11,7 +11,7 @@ const UsersDashboard = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/bookings`,
+        `https://dict-project.onrender.com/api/bookings`,
         {
           seminarId: id,
         },
@@ -129,6 +129,8 @@ const UsersDashboard = () => {
 export default UsersDashboard;
 
 export const loader = async () => {
-  const response = await axios.get("http://localhost:5000/api/seminars");
+  const response = await axios.get(
+    "https://dict-project.onrender.com/api/seminars"
+  );
   return response.data;
 };
